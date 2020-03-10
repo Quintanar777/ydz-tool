@@ -37,6 +37,24 @@ document.querySelector('#run').addEventListener('click', async () => {
             console.log('Copiado');
         });
     }
+
+    if (document.querySelector('#service').checked) {
+        executeMavenCleanAndPackage('mx.openpay.services', (output) => {
+            console.log(output);
+        });
+        copyWarToWebapps('mx.openpay.services', 'Services.war', (output) => {
+            console.log('Copiado');
+        });
+    }
+
+    if (document.querySelector('#manager').checked) {
+        executeMavenCleanAndPackage('mx.openpay.manager', (output) => {
+            console.log(output);
+        });
+        copyWarToWebapps('mx.openpay.manager', 'openpay-manager.war', (output) => {
+            console.log('Copiado');
+        });
+    }
 })
 
 
