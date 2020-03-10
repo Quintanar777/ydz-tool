@@ -1,0 +1,18 @@
+.form {
+    width: 100%;
+}
+
+body {
+    font-size: 13px;
+    background-image: url('../img/logo_YGGDRASIL.png');
+    background-size: contain;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.input-dir{
+    height: 30px;
+    font-size: 13px;
+}

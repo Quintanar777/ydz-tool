@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ydz Tool - Openpay</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="text-center">
+            <img src="img/login_logo.png" class="logo"/>
+        </div>
+        <div class="row">
+            <form class="form">
+                <!-- <div class="form-group">
+                  <label for="config-maven">Maven directory</label>
+                  <input type="text" class="form-control input-dir" id="config-maven">
+                </div> -->
+                <div class="form-group">
+                    <label for="config-tomcat" style="color: #fff;">Tomcat webapps directory</label>
+                    <input type="text" class="form-control input-dir" id="config-tomcat" value="/Users/bruno.rivera/Development/Tools/apache-tomcat-8.0.52-sprint-develop-intellij/webapps/" style="background-color: transparent;color: #fff;">
+                </div>
+                <div class="form-group">
+                    <label for="config-tomcat"  style="color: #fff;">Path project Openpay</label>
+                    <input type="text" class="form-control input-dir" id="config-openpay" value="/Users/bruno.rivera/Development/Openpay/Repositories/sprint-latam-dev/openpay/" style="background-color: transparent;color: #fff;"> 
+                </div>
+              </form>
+        </div>
+        <div class="row">
+            <p>Libraries:</p>
+        </div>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="data"  style="background-color: transparent;color: #fff;">
+                        <label class="form-check-label" for="data" style="color: #fff;">
+                            mx.openpay.data
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="commons" style="background-color: transparent;color: #fff;">
+                        <label class="form-check-label" for="commons" style="color: #fff;">
+                            mx.openpay.commons
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="business" style="background-color: transparent;color: #fff;">
+                        <label class="form-check-label" for="business" style="color: #fff;">
+                            mx.openpay.business
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="vault" style="background-color: transparent;color: #fff;">
+                        <label class="form-check-label" for="vault" style="color: #fff;">
+                            mx.openpay.vault.client
+                        </label>
+                      </div>
+                </li>
+              </ul>
+        </div>
+
+        <div class="row">
+            <p style="margin-top: 15px;">Applications:</p>
+        </div>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="dashboard">
+                        <label class="form-check-label" for="dashboard">
+                            Dashboard
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="service">
+                        <label class="form-check-label" for="service">
+                            API Services
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="vault">
+                        <label class="form-check-label" for="vault">
+                            Vault
+                        </label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="manager">
+                        <label class="form-check-label" for="manager">
+                            Manager
+                        </label>
+                      </div>
+                </li>
+              </ul>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+            <button id="run" type="submit" class="btn btn-primary">Run</button>
+        </div>
+    </div>
+  </body>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/app.js"></script>
+</html>

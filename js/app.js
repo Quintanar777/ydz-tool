@@ -66,7 +66,7 @@ function execute(command, callback) {
 
 function executeMavenCleanAndInstall(project) {
     console.log('Install ' + project);
-    var command = 'mvn clean install -f ' + path_openpay + project + '/pom.xml' + ' -DskipTests';
+    var command = 'maven clean install -f ' + path_openpay + project + '/pom.xml' + ' -DskipTests';
     console.log(command);
     execSync(command, {stdio: 'inherit'});
 
@@ -74,7 +74,7 @@ function executeMavenCleanAndInstall(project) {
 
 function executeMavenCleanAndPackage(project) {
     console.log('Package ' + project);
-    var command = 'mvn clean package -f ' + path_openpay + project + '/pom.xml' + ' -DskipTests';
+    var command = 'maven clean package -f ' + path_openpay + project + '/pom.xml' + ' -DskipTests';
     console.log(command);
     execSync(command, {stdio: 'inherit'});
 }

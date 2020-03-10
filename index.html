@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Ydz Tool - Openpay</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-        <div class="text-center">
-            <img src="img/login_logo.png" class="logo"/>
-        </div>
+        <br>
+        <!-- <div class="text-center">
+            <img src="img/login_logo.png" class="logo" />
+        </div> -->
         <div class="row">
             <form class="form">
                 <!-- <div class="form-group">
@@ -20,53 +23,57 @@
                   <input type="text" class="form-control input-dir" id="config-maven">
                 </div> -->
                 <div class="form-group">
-                    <label for="config-tomcat">Tomcat webapps directory</label>
-                    <input type="text" class="form-control input-dir" id="config-tomcat" value="/Users/erickquintanar/Documents/bin/tomcat9/webapps/">
+                    <label for="config-tomcat" style="color: #fff;">Tomcat webapps directory</label>
+                    <input type="text" class="form-control input-dir" id="config-tomcat"
+                        value=""
+                        style="background-color: transparent;color: #fff;">
                 </div>
                 <div class="form-group">
-                    <label for="config-tomcat">Path project Openpay</label>
-                    <input type="text" class="form-control input-dir" id="config-openpay" value="/Users/erickquintanar/Documents/openpay/dev/develop/openpay/">
+                    <label for="config-tomcat" style="color: #fff;">Path project Openpay</label>
+                    <input type="text" class="form-control input-dir" id="config-openpay"
+                        value=""
+                        style="background-color: transparent;color: #fff;">
                 </div>
-              </form>
+            </form>
         </div>
         <div class="row">
             <p>Libraries:</p>
         </div>
         <div>
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="data">
-                        <label class="form-check-label" for="data">
+                        <input class="form-check-input" type="checkbox" value="" id="data" style="color: #fff;">
+                        <label class="form-check-label" for="data" style="color: #fff;">
                             mx.openpay.data
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="commons">
-                        <label class="form-check-label" for="commons">
+                        <input class="form-check-input" type="checkbox" value="" id="commons" style="color: #fff;">
+                        <label class="form-check-label" for="commons" style="color: #fff;">
                             mx.openpay.commons
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="business">
-                        <label class="form-check-label" for="business">
+                        <input class="form-check-input" type="checkbox" value="" id="business" style="color: #fff;">
+                        <label class="form-check-label" for="business" style="color: #fff;">
                             mx.openpay.business
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="vault">
-                        <label class="form-check-label" for="vault">
+                        <input class="form-check-input" type="checkbox" value="" id="vault" style="color: #fff;">
+                        <label class="form-check-label" for="vault" style="color: #fff;">
                             mx.openpay.vault.client
                         </label>
-                      </div>
+                    </div>
                 </li>
-              </ul>
+            </ul>
         </div>
 
         <div class="row">
@@ -74,45 +81,46 @@
         </div>
         <div>
             <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="dashboard">
-                        <label class="form-check-label" for="dashboard">
+                        <input class="form-check-input" type="checkbox" value="" id="dashboard" style="color: #fff;">
+                        <label class="form-check-label" for="dashboard" style="color: #fff;">
                             Dashboard
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="service">
-                        <label class="form-check-label" for="service">
+                        <input class="form-check-input" type="checkbox" value="" id="service" style="color: #fff;">
+                        <label class="form-check-label" for="service" style="color: #fff;">
                             API Services
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="vault">
-                        <label class="form-check-label" for="vault">
+                        <input class="form-check-input" type="checkbox" value="" id="vault" style="color: #fff;">
+                        <label class="form-check-label" for="vault" style="color: #fff;">
                             Vault
                         </label>
-                      </div>
+                    </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="manager">
-                        <label class="form-check-label" for="manager">
+                        <input class="form-check-input" type="checkbox" value="" id="manager" style="color: #fff;">
+                        <label class="form-check-label" for="manager" style="color: #fff;">
                             Manager
                         </label>
-                      </div>
+                    </div>
                 </li>
-              </ul>
+            </ul>
         </div>
         <div class="row" style="margin-top: 15px;">
             <button id="run" type="submit" class="btn btn-primary">Run</button>
         </div>
     </div>
-  </body>
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/app.js"></script>
+</body>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/app.js"></script>
+
 </html>
