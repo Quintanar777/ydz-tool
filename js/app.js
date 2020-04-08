@@ -1,10 +1,8 @@
 const execSync = require('child_process').execSync;
-let config_tomcat;// = document.querySelector('#config-tomcat').value;
+let config_tomcat = document.querySelector('#config-tomcat').value;
 let path_openpay = document.querySelector('#config-openpay').value + '/';
 
-document.querySelector('#run').addEventListener('click', async () => {
-
-    config_tomcat = document.querySelector('#config-tomcat').val();
+document.querySelector('#run').addEventListener('click', async () => {    
 
     //librerias
     if (document.querySelector('#data').checked) {
