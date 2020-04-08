@@ -11,10 +11,14 @@ body {
 }
 
 .logo {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .input-dir{
     height: 30px;
     font-size: 13px;
+}
+
+.container{
+    padding-bottom: 30px;
 }

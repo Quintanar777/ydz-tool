@@ -23,13 +23,26 @@
                   <input type="text" class="form-control input-dir" id="config-maven">
                 </div> -->
                 <div class="form-group">
-                    <label for="config-tomcat" style="color: #fff;">Tomcat webapps directory</label>
+                    <label for="config-tomcat" style="color: #fff;">Tomcat webapps directory (Dejar hasta la ultima carpeta SIN /)</label>
                     <input type="text" class="form-control input-dir" id="config-tomcat"
                         value=""
                         style="background-color: transparent;color: #fff;">
                 </div>
+                
                 <div class="form-group">
-                    <label for="config-tomcat" style="color: #fff;">Path project Openpay</label>
+                    <label for="config-tomcat" style="color: #fff;">Tomcat Server</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <button id="startup" type="submit" class="btn btn-info">Startup Tomcat</button>
+                        </div>
+                        <div class="col-6">
+                            <button id="shutdown" type="submit" class="btn btn-warning">Shutdown Tomcat</button>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="form-group">
+                    <label for="config-tomcat" style="color: #fff;">Path project Openpay (Dejar hasta la ultima carpeta SIN /)</label>
                     <input type="text" class="form-control input-dir" id="config-openpay"
                         value=""
                         style="background-color: transparent;color: #fff;">
@@ -70,6 +83,14 @@
                         <input class="form-check-input" type="checkbox" value="" id="vault" style="color: #fff;">
                         <label class="form-check-label" for="vault" style="color: #fff;">
                             mx.openpay.vault.client
+                        </label>
+                    </div>
+                </li>
+                <li class="list-group-item" style="background-color: transparent;border-color: #fff;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="gateways" style="color: #fff;">
+                        <label class="form-check-label" for="vault" style="color: #fff;">
+                            gateways
                         </label>
                     </div>
                 </li>
@@ -115,10 +136,10 @@
                 </li>
             </ul>
         </div>
-        <div class="row" style="margin-top: 15px;">
+        <div class="row" style="margin-top: 15px;padding-bottom: 25px;">
             <button id="run" type="submit" class="btn btn-primary">Run</button>
-        </div>
-    </div>
+        </div>        
+    </div>    
 </body>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/app.js"></script>
