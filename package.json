@@ -5,7 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "electron": "^8.0.0"
+    "electron": "^8.2.4"
   },
   "devDependencies": {},
   "scripts": {
